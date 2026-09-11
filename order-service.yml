@@ -1,0 +1,10 @@
+# Eureka
+eureka:
+  instance:
+    hostname: localhost
+    instance-id: ${spring.application.name}:${server.port}
+    prefer-ip-address: false
+
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
